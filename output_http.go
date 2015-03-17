@@ -190,7 +190,7 @@ func (o *HTTPOutput) sendRequest(client *http.Client, data []byte) {
 	request, err := ParseRequest(data)
 
 	if err != nil {
-		log.Println("Cannot parse request", string(data), err)
+		//log.Println("Cannot parse request", string(data), err)
 		return
 	}
 
